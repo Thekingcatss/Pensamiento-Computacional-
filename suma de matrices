@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int filas, columnas;
+
+    cout << "Ingrese el número de filas: ";
+    cin >> filas;
+    cout << "Ingrese el número de columnas: ";
+    cin >> columnas;
+
+    int A[100][100], B[100][100], Suma[100][100];
+
+    cout << "Ingrese los elementos de la primera matriz:\n";
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            cin >> A[i][j];
+        }
+    }
+
+    cout << "Ingrese los elementos de la segunda matriz:\n";
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            cin >> B[i][j];
+        }
+    }
+
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            Suma[i][j] = A[i][j] + B[i][j];
+        }
+    }
+
+    cout << "La matriz suma es:\n";
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            cout << Suma[i][j] << " ";
+        }
+        cout << "\n";
+    }
+
+    return 0;
+}
