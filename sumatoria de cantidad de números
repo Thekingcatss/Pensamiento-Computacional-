@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main ()
+{
+int A,n;
+cout<<"ingrese la cantidad de numeros";
+cin>>n;
+A=0
+for(int i=1;i<=n;i++)
+{
+A=A+i;
+}
+cout<<A;
+return 0;
+}
